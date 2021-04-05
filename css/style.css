@@ -51,6 +51,11 @@ body {
     background-repeat: repeat;
 }
 
+.body2 {
+    background-image: url('../images/textura2.png') !important;
+    background-repeat: repeat !important;
+}
+
 .site-container {
     width: 1115px;
     margin: 0 auto;
@@ -430,6 +435,30 @@ body {
     color: #fff;
     margin: 5px;
     display: inline-block;
+}
+
+.cont-btn-arriba {
+    border: 1px solid #5830FF;
+    border-radius: 50%;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.btn-arriba {
+    clip-path: polygon(20% 100%, 20% 55%, 0 55%, 51% 0, 100% 55%, 80% 55%, 80% 100%);
+    background-color: #5830FF;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    align-self: center;
 }
 
 .top-banner__image .btn-empezar:hover,
@@ -1492,6 +1521,18 @@ body {
     font-size: 180px !important;
 }
 
+.fh5co-top-banner {
+    -webkit-box-shadow: inset 0px -177px 139px -65px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px -177px 139px -65px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px -177px 139px -65px rgba(0, 0, 0, 1);
+}
+
+#portafolio-items {
+    -webkit-box-shadow: inset 0px 200px 118px -32px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 200px 118px -32px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 200px 118px -32px rgba(0, 0, 0, 1);
+}
+
 .top-banner_porta {
     width: auto !important;
     height: auto !important;
@@ -1511,11 +1552,74 @@ body {
     transition: 0.7s;
 }
 
+
+/* CADA ITEM DEL PORTAFOLIO*/
+
 .item-porta {
-    width: 250px;
-    height: 400px;
-    background-color: #5830FF;
-    /* opacity: 0; */
+    font-family: 'Prompt-Bold';
+    background-color: white;
+    display: inline-flex;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 34px 38px 26px -42px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 34px 38px 26px -42px rgba(0, 0, 0, 1);
+    box-shadow: 34px 38px 26px -42px rgba(0, 0, 0, 1);
+}
+
+.item-porta .text-item-porta {
+    font-family: 'Prompt-Regular';
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.item-porta .img-item-porta {
+    z-index: 1;
+}
+
+.item-porta .text-item-porta>h4 {
+    font-family: 'Prompt-Bold';
+    text-shadow: #000;
+    font-size: 110px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-emphasis-style: unset;
+}
+
+.item-porta .text-item-porta>p {
+    font-family: 'Prompt-Regular';
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+}
+
+.item-porta .text-item-porta>p>strong {
+    font-weight: bold;
+}
+
+.item-porta>div>img {
+    padding: 10px;
+    width: 100% !important;
+}
+
+.btn-item-porta {
+    font-family: 'Prompt-Regular';
+    display: block;
+    position: relative;
+    border: 2px solid #000;
+    color: #000;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    bottom: 0;
+}
+
+.btn-item-porta:hover {
+    text-decoration: none;
 }
 
 .container-item-porta {

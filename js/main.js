@@ -45,6 +45,11 @@ $(document).ready(function() {
             });
         });
 
+        $('.cont-btn-arriba').css({
+            cursor: 'inherit',
+            opacity: '0'
+        });
+
         $('.boton').each(function(index, elemento) {
             $(this).css({
                 'top': '200px',
@@ -105,6 +110,11 @@ $(document).ready(function() {
                         transition: 'all 0.8s ease-out'
                     });
                 });
+                $('.cont-btn-arriba').css({
+                    cursor: 'pointer',
+                    opacity: '1',
+                    transition: '1s ease-out'
+                });
             } else {
                 $('.banner-titulo').css({
                     transform: 'translateX(0%)',
@@ -126,6 +136,12 @@ $(document).ready(function() {
                         opacity: '1',
                         transition: 'all 0.8s ease-out'
                     });
+                });
+
+                $('.cont-btn-arriba').css({
+                    cursor: 'inherit',
+                    opacity: '0',
+                    transition: '1s'
                 });
             }
 
