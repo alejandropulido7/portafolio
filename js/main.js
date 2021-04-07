@@ -82,7 +82,6 @@ $(document).ready(function() {
         var posicionPort = $('#portafolio').offset().top;
 
 
-
         $(window).scroll(function() {
             var posicionActual = $(window).scrollTop();
 

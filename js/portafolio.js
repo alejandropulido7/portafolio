@@ -44,6 +44,8 @@ $(document).ready(function() {
     var posicionPort = $('#top-pag-portafolio').offset().top;
     var posicionItems = $('#portafolio-items').offset().top;
 
+
+
     $(window).scroll(function() {
         var posicionActual = $(window).scrollTop();
         if (posicionActual > posicionPort + 400) {
@@ -72,13 +74,9 @@ $(document).ready(function() {
 
         if (posicionActual > posicionItems - 400) {
 
-            $('.item-porta').each(function(index, elemento) {
-                $(this).fadeIn(300 + (index * 200));
-            });
+            $('.container-item-porta').fadeIn(300 + (index * 200));
         } else {
-            $('.item-porta').each(function(index, elemento) {
-                $(this).fadeOut(300 + (index * 200));
-            });
+            $('.container-item-porta').fadeOut(300 + (index * 200));
         }
     });
 });
