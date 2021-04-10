@@ -44,7 +44,7 @@ $(document).ready(function() {
     var posicionPort = $('#top-pag-portafolio').offset().top;
     var posicionItems = $('#portafolio-items').offset().top;
 
-
+    var anchoPag = $(window).width();
 
     $(window).scroll(function() {
         var posicionActual = $(window).scrollTop();
@@ -58,6 +58,11 @@ $(document).ready(function() {
                 left: '400px',
                 opacity: '0'
             });
+            $('.cont-btn-arriba').css({
+                cursor: 'pointer',
+                opacity: '0',
+                transition: '1s ease-out'
+            });
         } else {
             $('.banner-titulo').css({
                 transform: 'translateX(0%)',
@@ -67,6 +72,10 @@ $(document).ready(function() {
                 left: '0',
                 opacity: '1',
                 transition: 'all 0.8s ease-out'
+            });
+            $('.cont-btn-arriba').css({
+                opacity: '1',
+                transition: '1s ease-out'
             });
         }
 

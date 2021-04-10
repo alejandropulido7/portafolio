@@ -281,6 +281,15 @@ body {
     }
 }
 
+@media (max-width: 800px) {
+    .titulo-pag-main {
+        position: relative;
+    }
+    #top-banner {
+        overflow: hidden !important;
+    }
+}
+
 @media (max-width: 520px) {
     .fh5co-top-banner {
         padding-top: 105px;
@@ -411,7 +420,6 @@ body {
 .top-banner__inner .top-banner__image {
     font-size: 0;
     width: 55%;
-    height: 300px;
 }
 
 .top-banner__image {
@@ -435,6 +443,7 @@ body {
     color: #fff;
     margin: 5px;
     display: inline-block;
+    text-align: center;
 }
 
 .cont-btn-arriba {
@@ -490,7 +499,7 @@ body {
 @media (max-width: 520px) {
     .top-banner__inner .top-banner__image {
         width: 65%;
-        margin-bottom: 20px;
+        margin: 20px auto;
     }
 }
 
@@ -622,8 +631,10 @@ body {
 
 /* Habilidades */
 
-.skill-bars {
+#skill-bars {
     /* background-color: #000; */
+    overflow: hidden;
+    width: 100%;
 }
 
 .skill-bar-holder {
@@ -660,6 +671,12 @@ body {
     margin: auto;
 }
 
+@media (max-width: 800px) {
+    #skill-bars {
+        overflow: hidden !important;
+    }
+}
+
 
 /* Fin habilidades */
 
@@ -684,7 +701,8 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
+    margin: 10px auto !important;
 }
 
 .top-portafolio__h2 {
@@ -693,6 +711,62 @@ body {
     color: #fff;
     font-family: "Prompt-Bold";
     position: relative;
+}
+
+@media (max-width: 800px) {
+    .top-portafolio__h2 {
+        font-size: 54px;
+    }
+    .btn-portafolio {
+        margin-left: 25% !important;
+    }
+    #top-pag-portafolio {
+        height: auto !important;
+        overflow: hidden;
+    }
+    .top-banner__inner .top-banner__text {
+        margin: 0;
+    }
+    .top-banner__inner .top-banner__text {
+        width: 95%;
+        margin: auto;
+    }
+    .top-banner__inner .top-banner__text-up .top-banner__h2 {
+        font-size: 40pt !important;
+        text-align: center;
+    }
+    .nav-dic {
+        display: none;
+    }
+    .top-banner__image>div {
+        margin: 0;
+        display: inherit;
+    }
+    .main-navigation .main-navigation__ul a {
+        font-size: 30pt;
+        z-index: 10;
+    }
+    .container-item-porta {
+        width: auto !important;
+        margin: 0 !important;
+    }
+    .item-porta {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-porta .text-item-porta>h4 {
+        font-size: 65px !important;
+        text-align: center;
+    }
+    .item-porta .text-item-porta>p {
+        margin: 10px auto !important;
+    }
+    .btn-item-porta {
+        width: auto !important;
+    }
+    .item-porta .text-item-porta {
+        z-index: 0 !important;
+    }
 }
 
 .top-portafolio__h2:hover {
@@ -1315,9 +1389,12 @@ body {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 800px) {
     .social-icons {
         margin: 35px 0;
+    }
+    .footer-info {
+        margin: 40px auto !important;
     }
 }
 
