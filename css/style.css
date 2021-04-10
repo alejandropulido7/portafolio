@@ -544,6 +544,10 @@ body {
     margin: 100px 0;
 }
 
+.about-me__profile {
+    height: 400px;
+}
+
 @media (max-width: 1250px) {
     .fh5co-about-me {
         margin: 100px 0;
