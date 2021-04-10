@@ -60,7 +60,7 @@ $(document).ready(function() {
             });
             $('.cont-btn-arriba').css({
                 cursor: 'pointer',
-                opacity: '0',
+                opacity: '1',
                 transition: '1s ease-out'
             });
         } else {
@@ -74,7 +74,7 @@ $(document).ready(function() {
                 transition: 'all 0.8s ease-out'
             });
             $('.cont-btn-arriba').css({
-                opacity: '1',
+                opacity: '0',
                 transition: '1s ease-out'
             });
         }
