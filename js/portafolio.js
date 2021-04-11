@@ -15,6 +15,10 @@ $(document).ready(function() {
         animationDuration: '1s'
     });
 
+    $('.cont-btn-arriba').css({
+        opacity: '0',
+    });
+
     /* Navegacion dinamica barra lateral */
     $('.nav-div').hover(function() {
         $(this).children('a').children('span').fadeIn();
@@ -61,7 +65,6 @@ $(document).ready(function() {
             $('.cont-btn-arriba').css({
                 cursor: 'pointer',
                 opacity: '1',
-                transition: '1s ease-out'
             });
         } else {
             $('.banner-titulo').css({
