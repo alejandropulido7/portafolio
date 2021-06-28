@@ -1713,3 +1713,14 @@ body {
     margin: 20px;
     width: 100%;
 }
+
+.languages-skills {
+    margin: 15px auto;
+}
+
+.languages-skills span {
+    background-color: #aaa;
+    color: #FFF;
+    padding: 2px;
+    border-radius: 2px;
+}
